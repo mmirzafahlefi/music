@@ -1,4 +1,4 @@
-import { songs, json } from './data.js';
+import { songs } from './data.js';
 const carousel = [...document.querySelectorAll(".carousel img")];
 
 let carouselImageIndex = 0;
@@ -96,7 +96,7 @@ const volumeSlider = document.querySelector(".volume-slider");
 
 const setMusic = (i) => {
   seekBar.value = 0;
-  let song = json[i];
+  let song = songs[i];
   currentMusic = i;
 
   music.src = song.audio;
