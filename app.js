@@ -102,7 +102,7 @@ const setMusic = (i) => {
   music.src = song.audio;
 
   songName.innerHTML = song.nama_latin;
-//   artistName.innerHTML = song.artist;
+  artistName.innerHTML = song.nama;
 //   coverImage.src = song.cover;
 
   setTimeout(() => {
