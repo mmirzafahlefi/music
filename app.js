@@ -1,4 +1,4 @@
-import { songs } from "./data.js";
+import { songs } from './data.js';
 const carousel = [...document.querySelectorAll(".carousel img")];
 
 let carouselImageIndex = 0;
