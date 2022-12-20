@@ -50,4 +50,4 @@
 // ]
 
 const res = await fetch('https://equran.id/api/surat')
-export let json = await res.json();
+export let songs = await res.json();
