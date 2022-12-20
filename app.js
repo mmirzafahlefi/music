@@ -1,4 +1,4 @@
-import { songs } from './data.js';
+import { songs, json } from './data.js';
 const carousel = [...document.querySelectorAll(".carousel img")];
 
 let carouselImageIndex = 0;
@@ -96,14 +96,14 @@ const volumeSlider = document.querySelector(".volume-slider");
 
 const setMusic = (i) => {
   seekBar.value = 0;
-  let song = songs[i];
+  let song = json[i];
   currentMusic = i;
 
-  music.src = song.path;
+  music.src = song.audio;
 
-  songName.innerHTML = song.name;
-  artistName.innerHTML = song.artist;
-  coverImage.src = song.cover;
+  songName.innerHTML = song.nama_latin;
+//   artistName.innerHTML = song.artist;
+//   coverImage.src = song.cover;
 
   setTimeout(() => {
     seekBar.max = music.duration;
