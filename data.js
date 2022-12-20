@@ -48,3 +48,6 @@ export let songs = [
         cover: 'assets/images/cover 8.png'
     },
 ]
+
+const res = await fetch('https://equran.id/api/surat')
+export let json = await res.json();
