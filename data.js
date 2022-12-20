@@ -1,4 +1,4 @@
-let songs = [
+export let songs = [
     {
         name: 'song 1',
         path: 'assets/musics/Song 1.mp3',
